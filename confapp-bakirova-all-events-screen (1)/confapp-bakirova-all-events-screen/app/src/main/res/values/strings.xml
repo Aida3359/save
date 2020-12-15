@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ConfApp</string>
+    <string name="activity_hello_title_user_name_hint">Введите ваше имя</string>
+    <string name="activity_hello_title_user_whats_your_name">Как тебя зовут?</string>
+    <string name="activity_hello_title_continue">Продолжить</string>
+    <string name="activity_hello_test_name">NAME</string>
+    <string name="branch_item_branch_title">Branch title</string>
+    <string name="events_card_layout__state_text_view">Следующий доклад</string>
+    <string name="events_card_layout__data_and_place_text_view">13:00 - 14:00</string>
+    <string name="header_layout_text_view">Привет, Васян</string>
+    <string name="favourite_btn_text">В избранные</string>
+    <string name="events_card_layout_state_text_view">Следующий доклад</string>
+    <string name="all_events_state_text_view">Завершен</string>
+    <string name="upcoming_events_activity_greetings_user_name_fmt">Приветики, %1s</string>
+</resources>

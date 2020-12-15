@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".favorite.presentation.FavoriteEventsActivity"
+    >
+    <LinearLayout
+        android:id="@+id/activity_favorite_events_content_for_empty_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="24dp"
+            android:text="Здесь пока тихо"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Здесь пока тихо"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/activity_hello_image_view_white"
+            />
+        <TextView
+            android:id="@+id/events_branch_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Избранное"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginVertical="8dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_favorite_events_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="80dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        >
+        <Button
+            android:id="@+id/activity_favorite_events_button_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_favorite_button"
+            android:paddingHorizontal="16dp"
+            android:text="На главную"
+            android:textAllCaps="false"
+            android:textColor="@color/app_primary_color"
+            />
+    </FrameLayout>
+</FrameLayout>

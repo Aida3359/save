@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_to_favorites"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/margin_16x"
+        android:background="@drawable/bg_favorite_button"
+        android:text="@string/favourite_btn_text"
+        android:textAllCaps="false"
+        android:padding="@dimen/padding_8dp"
+        android:drawableLeft="@drawable/ic_favorite_border"
+        android:textColor="@color/app_primary_color"
+        />
+</merge>

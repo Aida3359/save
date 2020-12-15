@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    tools:context=".events.presentation.UpcomingEventsActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_upcoming_events_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="5"
+        tools:listitem="@layout/branch_item"
+        />
+
+    <Button
+        android:id="@+id/bottom_button_to_favorites"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/margin_16x"
+        android:background="@drawable/bg_favorite_button"
+        android:drawableLeft="@drawable/ic_favorite_border"
+        android:drawablePadding="@dimen/padding_4dp"
+        android:padding="@dimen/padding_8dp"
+        android:text="@string/favourite_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@color/app_primary_color"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+</FrameLayout>

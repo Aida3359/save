@@ -1,0 +1,3 @@
+package kz.kolesateam.confapp.clicklisteners
+
+interface AllEventsClickListener : EventsClickListener, FavoritesClickListener
